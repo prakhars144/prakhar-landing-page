@@ -1,0 +1,23 @@
+.icon-list{
+  margin-left:auto;
+  display:flex;
+  @media(max-width:742px){
+    margin:0;
+  }
+}
+.social {
+  display: flex;
+  .nes-icon.navbar-social {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &-mobile{
+
+    @media(max-width:742px){
+      border:1px solid red;
+      display:none;
+    }
+  }
+
+}
