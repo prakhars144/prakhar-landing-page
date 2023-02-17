@@ -20,7 +20,7 @@ Projects.defaultProps = {
   projects: [
     {
       title: "Timeline scrubber",
-      description: "A timeline scrubber to scrub through recordings of CCTV cameras",
+      description: "A timeline scrubber implemented in ReactJs",
       techStacks: "stacks",
       img: videoTimelines,
       projectLink: "https://github.com/prakhars144/react-video-timelines-slider",
@@ -28,7 +28,7 @@ Projects.defaultProps = {
     },
     {
       title: "C++ design patterns",
-      description: "A collection of common design patterns in C++",
+      description: "Implementation of common design patterns in C++",
       techStacks: "stacks",
       img: designPatterns,
       projectLink: "https://github.com/prakhars144/cpp-design-patterns",

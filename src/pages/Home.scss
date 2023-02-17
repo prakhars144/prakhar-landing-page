@@ -13,6 +13,9 @@
   &-text {
     margin-top: 2rem;
     width: auto;
+    @media only screen and (max-device-width: 480px) {
+      font-size: 3.2rem;
+    }
     &--primary {
       letter-spacing: 0.5rem;
       color: #006bb3;

@@ -21,7 +21,7 @@
 .mobile{
   display:none;
   @media (max-width:742px) {
-    display:flex;
+    display:inline;
     width:100%;
     justify-content: center;
     align-items: center;
