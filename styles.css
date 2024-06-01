@@ -150,7 +150,6 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
 
 h1,
@@ -226,43 +225,13 @@ nav.site ul li {
 }
 
 .overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow-y: scroll;
-	/* Allow overlay scrolling */
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(16, 16, 16, 0.2);
 	z-index: 1000;
-}
-
-.overlay-content {
-	margin: auto;
-	padding: 5px;
-
-}
-
-.overlay:before {
-	background: linear-gradient(#101010 50%, rgba(16, 16, 16, 0.2) 50%),
-		linear-gradient(90deg,
-			rgba(255, 0, 0, 0.03),
-			rgba(0, 255, 0, 0.02),
-			rgba(0, 0, 255, 0.03));
-	background-size: 100% 3px, 6px 100%;
-	content: '';
-	display: block;
-	pointer-events: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 2;
+	animation: flicker 5s infinite;
 }
 
 .overlay:after {
-	animation: flicker 0.3s infinite;
+	animation: flicker 5s infinite;
 	background: rgba(16, 16, 16, 0.2);
 	content: '';
 	display: block;
