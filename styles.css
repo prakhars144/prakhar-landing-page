@@ -150,6 +150,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 h1,
@@ -225,11 +226,21 @@ nav.site ul li {
 }
 
 .overlay {
-	height: 1px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 1px;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	/* Allow overlay scrolling */
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+}
+
+.overlay-content {
+	margin: auto;
+	padding: 5px;
+
 }
 
 .overlay:before {
